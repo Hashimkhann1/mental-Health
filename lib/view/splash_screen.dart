@@ -11,9 +11,12 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
 
+
+  // this function is using for changing screen to bottomNavigator
+
   changeScreen() async {
     await Future.delayed(Duration(seconds: 6));
-    print('This is me checkk ');
+    // print('This is me checkk ');
     Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavigatorScreen()));
   }
 
